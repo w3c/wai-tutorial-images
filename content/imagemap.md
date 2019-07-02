@@ -131,7 +131,7 @@ The following organizational chart is used to provide links to each director's h
 {% include box.html type="end" %}
 {:/}
 
-[Full code for Image map example]({{ "/tutorials/images/examples/imagemap/" | relative_url }})
+[Full code for Image map example](/tutorials/images/examples/imagemap/)
 
 Browser implementation for image maps varies at the time of writing; see [this HTML bug](https://lists.w3.org/Archives/Public/public-html-bugzilla/2015Jan/0020.html). To accommodate for the different implementations, keep in mind to:
 

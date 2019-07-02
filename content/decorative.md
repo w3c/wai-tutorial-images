@@ -82,7 +82,7 @@ Decorative images don’t add information to the content of a page. For example,
 
 In these cases, a null (empty) `alt` text should be provided (`alt=""`) so that they can be ignored by assistive technologies, such as screen readers. Text values for these types of images would add audible clutter to screen reader output or could distract users if the topic is different from that in adjacent text. Leaving out the `alt` attribute is also not an option because when it is not provided, some screen readers will announce the file name of the image instead.
 
-Whether to treat an image as decorative or [informative]({{"/tutorials/images/informative/" | relative_url}}) is a judgment that only the author can make, based on the reason for including the image on the page. Images may be decorative when they are:
+Whether to treat an image as decorative or [informative](/tutorials/images/informative/) is a judgment that only the author can make, based on the reason for including the image on the page. Images may be decorative when they are:
 
 -   Visual styling such as borders, spacers, and corners;
 -   Supplementary to link text to improve its appearance or increase the clickable area;
@@ -234,7 +234,7 @@ This image is used only to add ambiance or visual interest to the page.
 {% include box.html type="start" title="Note" class="simple note" %}
 {:/}
 
-If the purpose of this image was to identify a plant or convey other information, rather than just to improve the look of the page, it should probably be treated as [informative]({{"/tutorials/images/informative/" | relative_url}}). The author determines the purpose for the use of the image.
+If the purpose of this image was to identify a plant or convey other information, rather than just to improve the look of the page, it should probably be treated as [informative](/tutorials/images/informative/). The author determines the purpose for the use of the image.
 
 {::nomarkdown}
 {% include box.html type="end" %}

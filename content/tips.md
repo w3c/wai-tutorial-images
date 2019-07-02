@@ -68,13 +68,13 @@ wcag_techniques:
 ## Tips
 
 - **Choosing appropriate text alternatives:** <br>
-  Imagine that you’re reading the web page aloud over the phone to someone who needs to understand the page. This should help you decide what (if any) information or function the images have. If they appear to have no informative value and aren’t links or buttons, it’s probably safe to treat them as [decorative]({{"/tutorials/images/decorative/" | relative_url}}).
+  Imagine that you’re reading the web page aloud over the phone to someone who needs to understand the page. This should help you decide what (if any) information or function the images have. If they appear to have no informative value and aren’t links or buttons, it’s probably safe to treat them as [decorative](/tutorials/images/decorative/).
 
 - **Prioritize information in text alternative:** <br>
   Aim to put the most important information at the beginning.
 
 - **Length of the text alternative:** <br>
-  The `alt` text should be the most concise description possible of the image’s purpose. If anything more than a short phrase or sentence is needed, it would be better to use one of the long description methods discussed in [complex images]({{"/tutorials/images/complex/" | relative_url}}).
+  The `alt` text should be the most concise description possible of the image’s purpose. If anything more than a short phrase or sentence is needed, it would be better to use one of the long description methods discussed in [complex images](/tutorials/images/complex/).
 
 - **Punctuation within `alt` attributes:**
 
