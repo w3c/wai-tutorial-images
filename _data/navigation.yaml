@@ -93,6 +93,8 @@
     - name: Images
       url: "/tutorials/images/"
       pages:
+      - name: Image Concepts
+        url: "/tutorials/images/"
       - name: Informative Images
         url: "/tutorials/images/informative/"
       - name: Decorative Images
