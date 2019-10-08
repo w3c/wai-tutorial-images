@@ -1,4 +1,3 @@
-# wai-tutorial-images
-Images Tutorial
+# Images Tutorial
 
-Preview: https://w3c.github.io/wai-tutorial-images/
+Preview: https://wai-tutorial-images.netlify.com/tutorials/images/
