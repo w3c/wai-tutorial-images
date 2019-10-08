@@ -1,81 +1,22 @@
 ---
 title: "Decorative Images"
 permalink: /tutorials/images/decorative/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'decorative.md'
+  path: 'content/decorative.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
 
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 - H2
 - H67
 ---
 
 {::nomarkdown}
-{% include_cached toc.html type="start" title="Page Content" class="full" %}
-{:/}
-
--   TOC is created automatically.
-{:toc}
-
-{::nomarkdown}
-{% include_cached toc.html type="end" %}
+{% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
 
 Decorative images don’t add information to the content of a page. For example, the information provided by the image might already be given using adjacent text, or the image might be included to make the website more visually attractive.
@@ -91,8 +32,13 @@ Whether to treat an image as decorative or [informative](/tutorials/images/infor
 
 The examples below show how to use the `alt` attribute when decorative images are provided using the `<img>` element. Where possible, decorative images should be provided using CSS background images instead.
 
-## Image used as part of page design
-{:.ex}
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{% include_cached toc.html %}
+
+## **Example 1:** Image used as part of page design
 
 This image is used as a border in the page design and has a purely
 decorative purpose.
@@ -143,8 +89,7 @@ If the image was used to indicate a thematic break, e.g. a scene change in a sto
 {% include box.html type="end" %}
 {:/}
 
-## Decorative image as part of a text link
-{:.ex}
+## **Example 2:** Decorative image as part of a text link
 
 This illustration of a crocus bulb is used to make the link easier to identify and to increase the clickable area but doesn’t add to the information already provided in the adjacent link text (of the same anchor). In this case, use a null (empty) `alt` value for the image.
 
@@ -173,8 +118,7 @@ This illustration of a crocus bulb is used to make the link easier to identify a
 {% include box.html type="end" %}
 {:/}
 
-## Image with adjacent text alternative
-{:.ex}
+## **Example 3:** Image with adjacent text alternative
 
 This picture of a sleeping dog is already sufficiently described by the adjacent text. There is no need to repeat this information, and a null (empty) `alt` value can be used for this image.
 
@@ -203,8 +147,7 @@ This picture of a sleeping dog is already sufficiently described by the adjacent
 {% include box.html type="end" %}
 {:/}
 
-## Image used for ambiance (eye-candy)
-{:.ex}
+## **Example 4:** Image used for ambiance (eye-candy)
 
 This image is used only to add ambiance or visual interest to the page.
 

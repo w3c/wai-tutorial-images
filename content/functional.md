@@ -1,89 +1,37 @@
 ---
 title: "Functional Images"
 permalink: /tutorials/images/functional/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'functional.md'
+  path: 'content/functional.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
 
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 - H37
 - H36
 ---
 
 {::nomarkdown}
-{% include_cached toc.html type="start" title="Page Content" class="full" %}
+{% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
 
--   TOC is created automatically.
-{:toc}
+Functional images are used to initiate actions rather than to convey information. They are used in buttons, links, and other interactive elements. The text alternative for the image should convey the action that will be initiated (the purpose of the image), rather than a description of the image.
 
-{::nomarkdown}
-{% include_cached toc.html type="end" %}
-{:/}
-
-Functional images are used to initiate actions rather than to convey information. They are used in buttons, links, and other interactive elements. The text alternative for the image should convey the action that will be initiated (the purpose of the image), rather than a description of the image. For instance, as shown in examples below, the text alternative should be “print this page” rather than “(image of a) printer”, “search” rather than “magnifying lens” or “Example.com homepage” rather than “Example.com logo”.
+For instance, as shown in examples below, the text alternative should be “print this page” rather than “(image of a) printer”, “search” rather than “magnifying lens” or “Example.com homepage” rather than “Example.com logo”.
 
 Missing or empty `alt` values create significant problems for screen reader users because functional images are essential to the functionality of the content. Screen readers will typically announce the image file name, the image URL, or the URL for the link destination, which is unlikely to help users understand the action that will be initiated by the image.
 
-## Image used alone as a linked logo
-{:.ex}
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{% include_cached toc.html %}
+
+## **Example 1:** Image used alone as a linked logo
 
 The following image is the only content of a link that leads to the W3C home page. It has the text alternative “W3C home” to indicate where the link will take the user. The next example, [“Logo image within link text” example](#logo-image-within-link-text), discusses what to do when there is more text in the link to identify the destination:
 
@@ -123,8 +71,7 @@ The following image is the only content of a link that leads to the W3C home pag
 {% include box.html type="end" %}
 {:/}
 
-## Logo image within link text
-{:.ex}
+## **Example 2:** Logo image within link text
 
 In this example, the W3C logo is used to supplement text within a link that leads to the W3C home page. The image does not represent different functionality or convey other information than that already provided in the link text, so a null (empty) value is applied, (`alt=""`), to avoid redundancy and repetition. In effect the image is a decorative adjunct or visual cue to the link text:
 
@@ -152,8 +99,7 @@ In this example, the W3C logo is used to supplement text within a link that lead
 {% include box.html type="end" %}
 {:/}
 
-## Icon image conveying information within link text
-{:.ex}
+## **Example 3:** Icon image conveying information within link text
 
 In this example, the image follows text within a link to inform users that the link will open in a new window. It has the text alternative “new window” to convey the meaning of the icon:
 
@@ -191,8 +137,7 @@ This technique is often used with icons to indicate different file formats such 
 {% include box.html type="end" %}
 {:/}
 
-## Stand-alone icon image that has a function
-{:.ex}
+## **Example 4:** Stand-alone icon image that has a function
 
 The following image is an icon representing a printer to denote print functionality. It has the text alternative “Print this page” because its purpose is to activate the print dialog when it is selected:
 
@@ -220,8 +165,7 @@ The following image is an icon representing a printer to denote print functional
 {% include box.html type="end" %}
 {:/}
 
-## Image used in a button
-{:.ex}
+## **Example 5:** Image used in a button
 
 The following image is used to give the button a distinct style. In this case, it is the button to initiate a search request and is an icon representing a magnifying lens. The text alternative for the image is “search” to convey the purpose of the button:
 

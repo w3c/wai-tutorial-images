@@ -1,67 +1,14 @@
 ---
 title: "Groups of Images"
 permalink: /tutorials/images/groups/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'groups.md'
+  path: 'content/groups.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
-
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 - G196
 - H67
@@ -69,22 +16,20 @@ wcag_techniques:
 ---
 
 {::nomarkdown}
-{% include_cached toc.html type="start" title="Page Content" class="full" %}
-{:/}
-
--   TOC is created automatically.
-{:toc}
-
-{::nomarkdown}
-{% include_cached toc.html type="end" %}
+{% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
 
 Sometimes groups of images are used together to represent one piece of information. For example, a collection of star icons that together represent a rating. In this case, only one of the images needs a text alternative to describe the entire collection, while the other images have a null (empty) `alt` attribute so that they are ignored by assistive technology.
 
 In other cases, a group of images may represent a collection of related images. For example, showing a collection of art impressions that are thematically related. In this case, each image needs its text alternative that describes it individually, as well as its relationship within the group.
 
-## Multiple images conveying a single piece of information
-{:.ex}
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{% include_cached toc.html %}
+
+## **Example 1:** Multiple images conveying a single piece of information
 
 This group of five images combined shows a product rating. There are five images (three filled stars, one half-filled star and one empty star) indicating the overall rating. The text alternative for the first image is “Rating: 3.5 out of 5 stars”. All other images have a null (empty) `alt` attribute (`alt=""`).
 
@@ -115,8 +60,7 @@ Rating:
 {% include box.html type="end" %}
 {:/}
 
-## A collection of images
-{:.ex}
+## **Example 2:** A collection of images
 
 In the example below, the HTML5 `<figure>` and `<figcaption>` elements are used to provide a caption for each image in a collection. The `<figure>` element can be nested, which is used in the example to provide a caption for the entire collection of images. The WAI-ARIA attribute `role` with the value of `group` is used to indicate this grouping to assistive technologies, `aria-labelledby` makes sure that the `figcaption` elements are used as labels for the individual groups.
 

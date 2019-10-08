@@ -1,71 +1,17 @@
 ---
 title: "Tips and Tricks"
 permalink: /tutorials/images/tips/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'tips.md'
+  path: 'content/tips.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
 
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 ---
-
-## Tips
 
 - **Choosing appropriate text alternatives:** <br>
   Imagine that you’re reading the web page aloud over the phone to someone who needs to understand the page. This should help you decide what (if any) information or function the images have. If they appear to have no informative value and aren’t links or buttons, it’s probably safe to treat them as [decorative](/tutorials/images/decorative/).

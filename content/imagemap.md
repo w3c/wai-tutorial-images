@@ -1,67 +1,15 @@
 ---
 title: "Image Maps"
 permalink: /tutorials/images/imagemap/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'imagemap.md'
+  path: 'content/imagemap.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
 
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 - G196
 - H67
@@ -69,21 +17,18 @@ wcag_techniques:
 ---
 
 {::nomarkdown}
-{% include_cached toc.html type="start" title="Page Content" class="full" %}
+{% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
-
--   TOC is created automatically.
-{:toc}
-
-{::nomarkdown}
-{% include_cached toc.html type="end" %}
-{:/}
-
 
 A client-side image map is an image divided into selectable regions defined by `<area>` elements (“hotspots”) that allow user interaction. Usually, the selectable regions are links to other pages. For image maps, text alternatives are needed on both the `<img>` element itself (to convey the informative context) and on each of the `<area>` elements (to convey the link destination or the action that will be initiated if the link is followed).
 
-## An organizational chart with links to individual pages
-{:.ex}
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{% include_cached toc.html %}
+
+## **Example 1:** An organizational chart with links to individual pages
 
 The following organizational chart is used to provide links to each director's home page. The text alternative for the image is “Board of Directors and related staff:”. Each linked `<area>` has a text alternative to identify the individual -- for example, “Davy Jones: Chairman”. The text alternative for individuals also states their relation in the graph.
 

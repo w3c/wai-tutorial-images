@@ -1,87 +1,33 @@
 ---
 title: "Images of Text"
 permalink: /tutorials/images/textual/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'textual.md'
+  path: 'content/textual.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
 
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 - C22
 - G94
 ---
 
 {::nomarkdown}
-{% include_cached toc.html type="start" title="Page Content" class="full" %}
-{:/}
-
--   TOC is created automatically.
-{:toc}
-
-{::nomarkdown}
-{% include_cached toc.html type="end" %}
+{% include box.html type="start" h="2" title="Summary" class="full" %}
 {:/}
 
 Images of text display text that is intended to be read. With the current CSS capabilities in most web browsers, it is good design practice to use actual text that is styled with CSS rather than image-based text presentation. Genuine text is much more flexible than images: It can be resized without losing clarity, and background and text colors can be modified to suit the reading preferences of users. Images are more likely to distort and pixelate when resized. In those rare situations where images of text must be used, the text alternative must contain the same text presented in the image.
 
-## Styled text with decorative effect
-{:.ex}
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{% include_cached toc.html %}
+
+## **Example 1:** Styled text with decorative effect
 
 This following image is used to convey a slogan text with decorative effects.
 
@@ -225,8 +171,7 @@ The code snippet doesn’t show any [vendor prefixes](https://www.w3.org/TR/css-
 {% include box.html type="end" %}
 {:/}
 
-## Image of text used as an unlinked logo
-{:.ex}
+## **Example 2:** Image of text used as an unlinked logo
 
 The following image is the logo for the Web Accessibility Initiative. It is not part of a link, so the text alternative is “Web Accessibility Initiative”. There’s no need to mention that it is a logo.
 
@@ -264,8 +209,7 @@ The following image is the logo for the Web Accessibility Initiative. It is not 
 {% include box.html type="end" %}
 {:/}
 
-## Mathematical expressions
-{:.ex}
+## **Example 3:** Mathematical expressions
 
 Historically, math expressions have often been presented as images because of the difficulty of presenting equations and special math symbols with HTML. However, MathML is emerging as the preferred presentation of accessible math on the Web.
 
@@ -314,11 +258,11 @@ If math forms are a substantial part of the content (for example, for online mat
 Most web browsers need plugins to render MathML correctly – especially for the new MathML 3.0 features used in this example. To see the MathML example below, <a href="https://addons.mozilla.org/en-US/firefox/addon/mathml-mml3ff/">this Firefox plugin</a> may be needed.
 
 Some libraries that polyfill MathML for web browsers, like <a href="http://www.mathjax.org">MathJax</a>, provide support for accessibility features.
-    
+
 Accessibility support for MathML varies, but continues to improve as web browsers and assistive technology evolve. It is important to evaluate MathML support before deciding which techniques to use.
-    
+
 Find more information about the state of MathML <a href="https://trac.webkit.org/wiki/MathML">in Webkit-based</a> and <a href="https://developer.mozilla.org/en-US/docs/Mozilla/MathML_Project/Status">in Mozilla-based browsers</a>.
-  
+
 
 {::nomarkdown}
 {% include box.html type="end" %}

@@ -105,10 +105,18 @@
         url: "/tutorials/images/textual/"
       - name: Complex Images
         url: "/tutorials/images/complex/"
+        pages:
+        - name: Example
+          url: "/tutorials/images/examples/2014-first-qtr/"
+          hide: true
       - name: Groups of Images
         url: "/tutorials/images/groups/"
       - name: Image Maps
         url: "/tutorials/images/imagemap/"
+        pages:
+        - name: Example
+          url: "/tutorials/images/examples/imagemap/"
+          hide: true
       - name: 'An <code style="color: inherit;">alt</code> Decision Tree'
         url: "/tutorials/images/decision-tree/"
       - name: Tips and Tricks

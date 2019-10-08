@@ -1,89 +1,36 @@
 ---
 title: "Informative Images"
 permalink: /tutorials/images/informative/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'informative.md'
+  path: 'content/informative.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
 
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 - H37
 - G94
 ---
 
-{::nomarkdown}
-{% include_cached toc.html type="start" title="Page Content" class="full" %}
-{:/}
-
--   TOC is created automatically.
-{:toc}
 
 {::nomarkdown}
-{% include_cached toc.html type="end" %}
+{% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
 
 Informative images convey a simple concept or information that can be expressed in a short phrase or sentence. The text alternative should convey the meaning or content that is displayed visually, which typically isn’t a literal description of the image.
 
 In some situations a detailed literal description may be needed, but only when the content of the image is all or part of the conveyed information. Whether to treat an image as informative or [decorative](/tutorials/images/decorative/) is a judgment that authors make, based on the reason for including the image on the page.
 
-## Images used to label other information
-{:.ex}
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{% include_cached toc.html %}
+
+## **Example 1:** Images used to label other information
 
 This example shows two image icons – one of a telephone, one of a fax machine. A phone number follows each image. Consistent with the visual presentation, the text alternatives “Telephone:” and “Fax:” are used to identify the device associated with each number.
 
@@ -116,8 +63,7 @@ This example shows two image icons – one of a telephone, one of a fax machine.
 {% include box.html type="end" %}
 {:/}
 
-## Images used to supplement other information
-{:.ex}
+## **Example 2:** Images used to supplement other information
 
 The following image shows a dog wearing a bell. It supplements the adjacent text that explains the purpose of this bell. A short text alternative is sufficient to describe the information that is displayed visually but is not explained in the text; in this case, the text alternative is “Dog with a bell attached to its collar.”.
 
@@ -156,8 +102,7 @@ If the text included an explanation of how the dog wears a bell, the image might
 {% include box.html type="end" %}
 {:/}
 
-## Images conveying succinct information
-{:.ex}
+## **Example 3:** Images conveying succinct information
 
 This simple diagram illustrates a counter-clockwise direction for unscrewing a bottle top or cap. The information can be described in a short sentence, so the text alternative “Push the cap down and turn it counter-clockwise (from right to left)” is given in the `alt` attribute.
 
@@ -195,8 +140,7 @@ This simple diagram illustrates a counter-clockwise direction for unscrewing a b
 {% include box.html type="end" %}
 {:/}
 
-## Images conveying an impression or emotion
-{:.ex}
+## **Example 4:** Images conveying an impression or emotion
 
 This photograph shows a happy family group. It’s a stock image so the individuals should not be identified. It’s being used to give the impression that the website or the company it represents is family-friendly. The text alternative is “We’re family-friendly” as this best describes the intended impression.
 
@@ -232,8 +176,7 @@ If the purpose of this image were simply to improve the look of a page rather th
 {% include box.html type="end" %}
 {:/}
 
-## Images conveying file format
-{:.ex}
+## **Example 5:** Images conveying file format
 
 In this example, a document is available to download in three different
 formats identified by format icons within text links. They have the text

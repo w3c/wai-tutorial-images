@@ -1,83 +1,23 @@
 ---
 title: "Complex Images"
 permalink: /tutorials/images/complex/
-layout: default
-description: 
+lang: en
+description:
 image: /content-images/wai-tutorial-images/social.png
 github:
   repository: w3c/wai-tutorial-images
-  path: 'complex.md'
+  path: 'content/complex.md'
 footer: > # Text in footer in HTML
-  
-inline_css: |
-  .ex, .ap {
-    b, &:before {
-      color: #005A6A;
-      font-weight: inherit;
-    }
-  }
-  .risky {
-    &:after {
-      background-color: #005A6A;
-      color: #fff;
-      font-weight: normal;
-      border-radius: 100%;
-      width: 1.2em;
-      height: 1.2em;
-      margin-left: .6em;
-      line-height: 1.2;
-      text-align: center;
-      display: inline-block;
-      content: "!";
-    }
-  }
-  .ex {
-    counter-increment: examples;
-    counter-reset: approaches;
-  }
-    .ex:before {
-      content: 'Example ' counter(examples) ': ';
-    }
-    .ex.inap {
-      counter-reset: none;
-    }
 
 
-  .newap {
-    counter-reset: approaches;
-  }
-
-  .newex {
-    counter-reset: examples;
-  }
-
-
-  h2.first, h3.first, .newexap {
-    counter-reset: examples approaches;
-  }
-
-  .ap {
-    counter-increment: approaches;
-  }
-    .ap:before {
-      content: 'Approach ' counter(approaches) ': ';
-    }
 wcag_techniques:
 - C22
 - G94
 ---
 
 {::nomarkdown}
-{% include_cached toc.html type="start" title="Page Content" class="full" %}
+{% include box.html type="start" h="2" title="Overview" class="full" %}
 {:/}
-
--   TOC is created automatically.
-{:toc}
-
-{::nomarkdown}
-{% include_cached toc.html type="end" %}
-{:/}
-
 
 Complex images contain substantial information – more than can be conveyed in a short phrase or sentence. These are typically:
 
@@ -87,6 +27,12 @@ Complex images contain substantial information – more than can be conveyed in 
 
 In these cases, a two-part text alternative is required. The first part is the short description to identify the image and, where appropriate, indicate the location of the long description. The second part is the long description – a textual representation of the essential information conveyed by the image. The following examples show different approaches that can be used to provide such short and long descriptions.
 
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{% include_cached toc.html %}
+
 ## Long descriptions
 
 There are situations where the composition of an image is important and needs to be provided in the long description. For example, the sequence of colors used and the relative heights of the columns in a bar chart may be relevant information about the structure of the chart, in addition to the actual values and trends that it depicts.
@@ -95,8 +41,8 @@ Remember that complex images can be difficult to understand by many people – i
 
 It is also good practice to refer to and summarize more complex images from the accompanying text. For example, a reference such as “The following graph shows that visitors were lost in the first quarter, but the numbers recovered in the second quarter” helps to point out the relevant information that the image is intended to present.
 
-## Description containing structured information
-{:.ex}
+
+## **Example 1:** Description containing structured information
 
 In this example, a bar chart of website visitor statistics has the short description “Bar chart showing monthly and total visitors for the first quarter 2014 for sites 1 to 3”, provided through the `alt` attribute of the image. The long description provides detailed information, including scales, values, relationships and trends that are represented visually. For example, the long description can point out the declining values for site 1, consistent values for site 2, and increasing values for site 3 that are encoded in the bar chart. The [longdesc approach](#providing-a-link-to-the-long-description-via-longdesc) used in the following example is described later in the section.
 
@@ -120,7 +66,7 @@ See [example long description](/tutorials/images/examples/2014-first-qtr/) assoc
 
 Among the approaches below, the first and fourth one make the information available to other programs, such as web browsers and search engines.
 
-### A text link to the long description adjacent to the image
+### **Approach 1:** A text link to the long description adjacent to the image
 {:.ap}
 
 This approach provides a text link next to the image that refers to a separate web page or a section of the same web page that contains the long description. The link text needs to clarify the destination, and associate it with the image.
@@ -166,7 +112,7 @@ The HTML5 `<figure>` and `<figcaption>` elements can be used to group image and 
 {% include box.html type="end" %}
 {:/}
 
-### Describing the location of the long description in the `alt` attribute
+### **Approach 2:** Describing the location of the long description in the `alt` attribute
 {:.ap}
 
 When a long description is provided on the same web page as an image, its location can be described using the `alt` attribute of the image. The location information needs to be clear and accurate to help users locate the content.
@@ -190,7 +136,7 @@ When a long description is provided on the same web page as an image, its locati
 {% include box.html type="end" %}
 {:/}
 
-### Structurally associating the image and its adjacent long description (HTML5)
+### **Approach 3:** Structurally associating the image and its adjacent long description (HTML5)
 {:.ap}
 
 The HTML5 `<figure>` element can be used to enclose both the image and its long description. The long description (presented as headings, text, and a table) is wrapped in the `<figcaption>` element. It is explicitly associated with the image using `role="group"` on the containing `<figure>` element in web browsers that don’t convey the semantics of the `<figure>` element.
@@ -219,7 +165,7 @@ The HTML5 `<figure>` element can be used to enclose both the image and its long 
 {% include box.html type="end" %}
 {:/}
 
-### Providing a link to the long description via `longdesc`
+### **Approach 4:** Providing a link to the long description via `longdesc`
 {:.ap}
 
 {::nomarkdown}
@@ -227,7 +173,7 @@ The HTML5 `<figure>` element can be used to enclose both the image and its long 
 {:/}
 
 In Firefox, long descriptions linked by <code>longdesc</code> are available through “View description” in the image’s context menu. There is an <a href="https://chrome.google.com/webstore/detail/long-descriptions-in-cont/ohbmencljkleiedahijfkagnmmhbilgp">official Chrome Extension</a> that adds long description access in a similar way. Safari has no support for <code>longdesc</code>. In other web browsers, <code>longdesc</code> is currently available only to screen reader users. Mobile platforms currently do not support <code>longdesc</code>.
-    
+
 No browser indicates the presence of the <code>longdesc</code> attribute visually, other than through the image context menus as noted above.
 
 {::nomarkdown}
@@ -275,8 +221,7 @@ When the `longdesc` attribute contains a fragment identifier (`#` followed by th
 {% include box.html type="end" %}
 {:/}
 
-## Description containing textual information
-{:.ex}
+## **Example 2:** Description containing textual information
 
 The WAI-ARIA `aria-describedby` attribute can be used to link to a description of the image that is provided anywhere on the same web page, in a similar way to the [longdesc approach](#providing-a-link-to-the-long-description-via-longdesc). The value of the attribute is the `id` of the element that provides the long description.
 
