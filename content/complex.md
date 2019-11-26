@@ -67,7 +67,6 @@ See [example long description](/tutorials/images/examples/2014-first-qtr/) assoc
 Among the approaches below, the first and fourth one make the information available to other programs, such as web browsers and search engines.
 
 ### **Approach 1:** A text link to the long description adjacent to the image
-{:.ap}
 
 This approach provides a text link next to the image that refers to a separate web page or a section of the same web page that contains the long description. The link text needs to clarify the destination, and associate it with the image.
 
@@ -113,7 +112,7 @@ The HTML5 `<figure>` and `<figcaption>` elements can be used to group image and 
 {:/}
 
 ### **Approach 2:** Describing the location of the long description in the `alt` attribute
-{:.ap}
+
 
 When a long description is provided on the same web page as an image, its location can be described using the `alt` attribute of the image. The location information needs to be clear and accurate to help users locate the content.
 
@@ -137,7 +136,7 @@ When a long description is provided on the same web page as an image, its locati
 {:/}
 
 ### **Approach 3:** Structurally associating the image and its adjacent long description (HTML5)
-{:.ap}
+
 
 The HTML5 `<figure>` element can be used to enclose both the image and its long description. The long description (presented as headings, text, and a table) is wrapped in the `<figcaption>` element. It is explicitly associated with the image using `role="group"` on the containing `<figure>` element in web browsers that don’t convey the semantics of the `<figure>` element.
 
@@ -166,7 +165,8 @@ The HTML5 `<figure>` element can be used to enclose both the image and its long 
 {:/}
 
 ### **Approach 4:** Providing a link to the long description via `longdesc`
-{:.ap}
+
+{% include issue.html issue="599" repo="w3c/wai-tutorials" note="Remove this section depending on the outcome of this issue." %}
 
 {::nomarkdown}
 {% include box.html type="start" title="Accessibility Support: <code>Longdesc</code>, Web Browsers, and Assistive Technologies" class="note right simple" %}

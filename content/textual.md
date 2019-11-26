@@ -42,7 +42,7 @@ This following image is used to convey a slogan text with decorative effects.
 {:/}
 
 ### Using an image
-{:.ap}
+
 
 Previously it was not possible to create such text using CSS styling that would be rendered consistently across browsers, which is why images of text were used. The text alternative for this image is the same as the slogan presented in the image: “Your access to the city”. The decorative effects (stylized text and shadow) are not be described because they are not relevant.
 
@@ -59,7 +59,7 @@ Previously it was not possible to create such text using CSS styling that would 
 {:/}
 
 ### Using CSS3
-{:.ap}
+
 
 
 The visual effects in the above image can be produced using CSS3 and an embedded font. Authors and developers that have to support older browsers may find the image example useful if a less styled fallback text isn’t an option.
@@ -214,7 +214,7 @@ The following image is the logo for the Web Accessibility Initiative. It is not 
 Historically, math expressions have often been presented as images because of the difficulty of presenting equations and special math symbols with HTML. However, MathML is emerging as the preferred presentation of accessible math on the Web.
 
 ### Using images
-{:.ap}
+
 
 The image below displays a recurring decimal number (decimal numbers that never end). The `alt` text for this recurring number is “0.3333 recurring. (In the image, the recurrence is indicated by a line over the ‘3’ in the fourth decimal place.)”
 
@@ -245,7 +245,7 @@ In this particular example, the way that the recurrence is shown is important, s
 {:/}
 
 ### Using MathML
-{:.ap}
+
 
 Images of math expressions should only be used in *exceptional circumstances* – for example when the expression is an exception to the regular content of the page or website. The preferred method for displaying math expressions is MathML, which can present mathematical expressions semantically.
 

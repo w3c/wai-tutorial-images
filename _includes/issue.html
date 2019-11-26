@@ -1,0 +1,11 @@
+{::nomarkdown}
+{% include box.html type="start" title="Editor’s Note" class="simple notes ednote" %}
+{:/}
+
+{%if include.issue %}[Issue #{{include.issue}}](https://github.com/{% if include.repo %}{{include.repo}}{% else %}{{page.github.repository}}{% endif %}/issues/{{include.issue}}) — {% endif %}{{ include.note }}
+
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+<style>.box-ednote {border-color: var(--gold); border-width: 5px;}</style>
