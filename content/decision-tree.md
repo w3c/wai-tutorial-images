@@ -9,8 +9,6 @@ github:
   repository: w3c/wai-tutorial-images
   path: 'content/decision-tree.md'
 footer: > # Text in footer in HTML
-
-
 wcag_techniques:
 ---
 
@@ -50,4 +48,3 @@ This decision tree describes how to use the `alt` attribute of the `<img>` eleme
 - **Is the image’s use not listed above or it’s unclear what `alt` text to provide?**
   - {:.yes} This decision tree **does not** cover all cases. For detailed information on the provision of text alternatives refer to the [Image Concepts Page](/tutorials/images/).
 {:.decision-tree}
-

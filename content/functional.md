@@ -131,7 +131,7 @@ In this example, the image follows text within a link to inform users that the l
 {% include box.html type="start" title="Note" class="simple notes" %}
 {:/}
 
-This technique is often used with icons to indicate different file formats such as AVI, ODF, MP3, PDF, Word, and many more. In this case, the text alternative should equally convey the format represented by each icon, see [Informative Images]({{"/tutorials/images/informative/" | relative_url}}#images-conveying-file-format).
+This technique is often used with icons to indicate different file formats such as AVI, ODF, MP3, PDF, Word, and many more. In this case, the text alternative should equally convey the format represented by each icon, see [Informative Images](/tutorials/images/informative/#images-conveying-file-format).
 
 {::nomarkdown}
 {% include box.html type="end" %}
