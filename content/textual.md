@@ -255,7 +255,7 @@ If math forms are a substantial part of the content (for example, for online mat
 {% include box.html type="start" title="Accessibility Support: MathML, Web Browsers, and Assistive Technologies" class="simple right" %}
 {:/}
 
-Most web browsers need plugins to render MathML correctly – especially for the new MathML 3.0 features used in this example. To see the MathML example below, <a href="https://addons.mozilla.org/en-US/firefox/addon/mathml-mml3ff/">this Firefox plugin</a> may be needed.
+Most web browsers need plugins to render MathML correctly – especially for the new MathML 3.0 features used in this example. To see the MathML example below, <a href=" https://addons.mozilla.org/en-US/firefox/addon/presentation-mathml-polyfill/">this Firefox plugin</a> may be needed.
 
 Some libraries that polyfill MathML for web browsers, like <a href="http://www.mathjax.org">MathJax</a>, provide support for accessibility features.
 
