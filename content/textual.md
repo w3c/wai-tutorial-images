@@ -49,7 +49,7 @@ This following image is used to convey a slogan text with decorative effects.
 
 ### Using an image
 
-{% include issue.html note="Removed Long-winded introduction." status="proposed" %} 
+{% include ednote.html note="Removed Long-winded introduction." status="proposed" %} 
 
 The text alternative for this image is the same as the slogan presented in the image: “Your access to the city”. The decorative effects (stylized text and shadow) are not be described because they are not relevant.
 
@@ -67,7 +67,7 @@ The text alternative for this image is the same as the slogan presented in the i
 
 ### Using CSS
 
-{% include issue.html issue="3" note="Removed Outdated Support Notes." status="proposed" %} 
+{% include ednote.html issue="3" note="Removed Outdated Support Notes." status="proposed" %} 
 
 The visual effects in the above image can be produced using CSS and webfonts. Webfonts can be translated using automated services, allow easy change of the text, and make the content available in circumstances where images would not load, for example when having a bad connection.
 
