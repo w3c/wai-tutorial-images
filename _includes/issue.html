@@ -1,11 +1,14 @@
-{::nomarkdown}
-{% include box.html type="start" title="Editor’s Note" class="simple notes ednote" %}
-{:/}
-
-{%if include.issue %}[Issue #{{include.issue}}](https://github.com/{% if include.repo %}{{include.repo}}{% else %}{{page.github.repository}}{% endif %}/issues/{{include.issue}}) — {% endif %}{{ include.note }}
-
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
-
-<style>.box-ednote {border-color: var(--gold); border-width: 5px;}</style>
+{%- unless site.published -%}
+{%- capture text-%}
+{%- if include.issue -%}
+  <a href="https://github.com/{% if include.repo %}{{include.repo}}{% else %}{{page.github.repository}}{% endif %}/issues/{{include.issue}}">Issue #{{include.issue}}</a> — {{ include.note }}
+{%- else -%}
+  {%- if include.pr -%}
+    <a href="https://github.com/{% if include.repo %}{{include.repo}}{% else %}{{page.github.repository}}{% endif %}/pull/{{include.pr}}">Pull Request #{{include.pr}}</a> — {{ include.note }}
+  {%- else -%}
+    {{ include.note }}
+  {%- endif -%}
+{%- endif -%}
+{%- endcapture -%}
+<span style="border: 5px solid var(--gold);"><strong style="background-color: var(--gold);">Editor’s Note:</strong> {{text }}</span><br>
+{%- endunless -%}
