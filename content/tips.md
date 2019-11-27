@@ -22,6 +22,10 @@ wcag_techniques:
 - **Length of the text alternative:** <br>
   The `alt` text should be the most concise description possible of the image’s purpose. If anything more than a short phrase or sentence is needed, it would be better to use one of the long description methods discussed in [complex images](/tutorials/images/complex/).
 
+- {% include issue.html pr="527" repo="w3c/wai-tutorials" note="Add Responsive Design tip as proposed." %} 
+  **Responsive design:** <br>
+  Icons with text labels will often drop the text labels when viewed on smaller screens. Ensure that icons are readable at that size, understandable without text, and have text descriptions.
+
 - **Punctuation within `alt` attributes:**
 
   * As for any text, using punctuation in the text alternative makes the information easier to understand. In particular, remember to add space characters in the `alt` text when there’s no space character between the image and adjacent text, to avoid having words running together when they are read by a screen reader.
