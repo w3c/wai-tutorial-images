@@ -2,6 +2,7 @@
 title: "An alt Decision Tree"
 title_html: "An <code>alt</code> Decision Tree"
 permalink: /tutorials/images/decision-tree/
+ref: /tutorials/images/decision-tree/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -9,6 +10,13 @@ github:
   repository: w3c/wai-tutorial-images
   path: 'content/decision-tree.md'
 footer: > # Text in footer in HTML
+
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/imagemap/
+  next: /tutorials/images/tips/
+
 wcag_techniques:
 ---
 

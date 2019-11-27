@@ -1,6 +1,7 @@
 ---
 title: "Tips and Tricks"
 permalink: /tutorials/images/tips/
+ref: /tutorials/images/tips/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -9,6 +10,10 @@ github:
   path: 'content/tips.md'
 footer: > # Text in footer in HTML
 
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/decision-tree/
 
 wcag_techniques:
 ---
@@ -22,7 +27,7 @@ wcag_techniques:
 - **Length of the text alternative:** <br>
   The `alt` text should be the most concise description possible of the image’s purpose. If anything more than a short phrase or sentence is needed, it would be better to use one of the long description methods discussed in [complex images](/tutorials/images/complex/).
 
-- {% include issue.html pr="527" repo="w3c/wai-tutorials" note="Add Responsive Design tip as proposed." %} 
+- {% include issue.html pr="527" repo="w3c/wai-tutorials" note="Add Responsive Design tip as proposed." status="proposed" %} 
   **Responsive design:** <br>
   Icons with text labels will often drop the text labels when viewed on smaller screens. Ensure that icons are readable at that size, understandable without text, and have text descriptions.
 

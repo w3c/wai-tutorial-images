@@ -1,6 +1,7 @@
 ---
 title: "Informative Images"
 permalink: /tutorials/images/informative/
+ref: /tutorials/images/informative/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -9,6 +10,11 @@ github:
   path: 'content/informative.md'
 footer: > # Text in footer in HTML
 
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/
+  next: /tutorials/images/decorative/
 
 wcag_techniques:
 - H37

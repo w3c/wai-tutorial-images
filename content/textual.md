@@ -1,6 +1,7 @@
 ---
 title: "Images of Text"
 permalink: /tutorials/images/textual/
+ref: /tutorials/images/textual/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -9,6 +10,11 @@ github:
   path: 'content/textual.md'
 footer: > # Text in footer in HTML
 
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/functional/
+  next: /tutorials/images/complex/
 
 wcag_techniques:
 - C22

@@ -1,6 +1,7 @@
 ---
 title: "Complex Images"
 permalink: /tutorials/images/complex/
+ref: /tutorials/images/complex/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -9,6 +10,11 @@ github:
   path: 'content/complex.md'
 footer: > # Text in footer in HTML
 
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/textual/
+  next: /tutorials/images/groups/
 
 wcag_techniques:
 - C22
@@ -166,7 +172,7 @@ The HTML5 `<figure>` element can be used to enclose both the image and its long 
 
 ### **Approach 4:** Providing a link to the long description via `longdesc`
 
-{% include issue.html issue="599" repo="w3c/wai-tutorials" note="Remove this section depending on the outcome of this issue." %}
+{% include issue.html issue="599" repo="w3c/wai-tutorials" note="Remove this section depending on the outcome of this issue." status="open" %}
 
 {::nomarkdown}
 {% include box.html type="start" title="Accessibility Support: <code>Longdesc</code>, Web Browsers, and Assistive Technologies" class="note right simple" %}

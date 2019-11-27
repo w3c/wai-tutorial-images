@@ -1,6 +1,7 @@
 ---
 title: "Functional Images"
 permalink: /tutorials/images/functional/
+ref: /tutorials/images/functional/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -9,6 +10,11 @@ github:
   path: 'content/functional.md'
 footer: > # Text in footer in HTML
 
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/decorative/
+  next: /tutorials/images/textual/
 
 wcag_techniques:
 - H37

@@ -1,6 +1,7 @@
 ---
 title: "Groups of Images"
 permalink: /tutorials/images/groups/
+ref: /tutorials/images/groups/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -8,6 +9,12 @@ github:
   repository: w3c/wai-tutorial-images
   path: 'content/groups.md'
 footer: > # Text in footer in HTML
+
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/complex/
+  next: /tutorials/images/imagemap/
 
 wcag_techniques:
 - G196

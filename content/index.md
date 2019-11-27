@@ -1,6 +1,7 @@
 ---
-title: "Images Concepts"
+title: "Images Tutorial"
 permalink: /tutorials/images/
+ref: /tutorials/images/
 lang: en
 last_updated: 2019-07-27
 description:
@@ -9,6 +10,13 @@ github:
   repository: w3c/wai-tutorial-images
   path: 'content/index.md'
 footer: > # Text in footer in HTML
+
+resource:
+  ref: /tutorials/
+navigation:
+  next: /tutorials/images/informative/
+
+
 
 wcag_success_criteria:
 - 1.1.1

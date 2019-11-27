@@ -1,6 +1,7 @@
 ---
 title: "Decorative Images"
 permalink: /tutorials/images/decorative/
+ref: /tutorials/images/decorative/
 lang: en
 description:
 image: /content-images/wai-tutorial-images/social.png
@@ -9,6 +10,11 @@ github:
   path: 'content/decorative.md'
 footer: > # Text in footer in HTML
 
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/informative/
+  next: /tutorials/images/functional/
 
 wcag_techniques:
 - H2

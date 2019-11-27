@@ -9,6 +9,11 @@ github:
   path: 'content/imagemap.md'
 footer: > # Text in footer in HTML
 
+resource:
+  ref: /tutorials/images/
+navigation:
+  previous: /tutorials/images/groups/
+  next: /tutorials/images/decision-tree/
 
 wcag_techniques:
 - G196
