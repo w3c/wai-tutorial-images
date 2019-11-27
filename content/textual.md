@@ -49,8 +49,9 @@ This following image is used to convey a slogan text with decorative effects.
 
 ### Using an image
 
+{% include issue.html note="Removed Long-winded introduction." status="proposed" %} 
 
-Previously it was not possible to create such text using CSS styling that would be rendered consistently across browsers, which is why images of text were used. The text alternative for this image is the same as the slogan presented in the image: “Your access to the city”. The decorative effects (stylized text and shadow) are not be described because they are not relevant.
+The text alternative for this image is the same as the slogan presented in the image: “Your access to the city”. The decorative effects (stylized text and shadow) are not be described because they are not relevant.
 
 {::nomarkdown}
 {% include box.html type="start" title="Code" class="example" %}
@@ -64,24 +65,11 @@ Previously it was not possible to create such text using CSS styling that would 
 {% include box.html type="end" %}
 {:/}
 
-### Using CSS3
+### Using CSS
 
+{% include issue.html issue="3" note="Removed Outdated Support Notes." status="proposed" %} 
 
-
-The visual effects in the above image can be produced using CSS3 and an embedded font. Authors and developers that have to support older browsers may find the image example useful if a less styled fallback text isn’t an option.
-
-{::nomarkdown}
-{% include box.html type="start" title="Browser Support" class="simple right" %}
-{:/}
-
-Displaying these effects requires browsers that support the following web technologies:
-
-* <a href="https://www.w3.org/TR/css3-transforms/">CSS Transforms</a>
-* <a href="https://www.w3.org/TR/css3-webfonts/">CSS Fonts</a>
-
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
+The visual effects in the above image can be produced using CSS and webfonts. Webfonts can be translated using automated services, allow easy change of the text, and make the content available in circumstances where images would not load, for example when having a bad connection.
 
 {::nomarkdown}
 {% include box.html type="start" title="Example" class="example" %}
@@ -162,16 +150,6 @@ Displaying these effects requires browsers that support the following web techno
   transform: rotate(-10deg);
 }
 ~~~
-
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
-
-{::nomarkdown}
-{% include box.html type="start" title="Note" class="simple notes" %}
-{:/}
-
-The code snippet doesn’t show any [vendor prefixes](https://www.w3.org/TR/css-2010/#experimental). These can be added to increase compatibility with older versions of web browsers using their experimental implementation of CSS3 features.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -258,7 +236,7 @@ Images of math expressions should only be used in *exceptional circumstances* �
 If math forms are a substantial part of the content (for example, for online maths courses), [MathML](https://www.w3.org/Math/) should be used instead. MathML represents both presentation and content semantically, making it potentially more accessible to a wider range of users.
 
 {::nomarkdown}
-{% include box.html type="start" title="Accessibility Support: MathML, Web Browsers, and Assistive Technologies" class="simple right" %}
+{% include box.html type="start" title="Accessibility Support: MathML, Web Browsers, and Assistive Technologies" class="simple" %}
 {:/}
 
 Most web browsers need plugins to render MathML correctly – especially for the new MathML 3.0 features used in this example. To see the MathML example below, <a href=" https://addons.mozilla.org/en-US/firefox/addon/presentation-mathml-polyfill/">this Firefox plugin</a> may be needed.
