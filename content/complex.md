@@ -143,6 +143,7 @@ When a long description is provided on the same web page as an image, its locati
 
 ### **Approach 3:** Structurally associating the image and its adjacent long description (HTML5)
 
+{% include ednote.html issue="604" repo="w3c/wai-tutorials" note="Consider removing role=group advice" status="open" %}
 
 The HTML5 `<figure>` element can be used to enclose both the image and its long description. The long description (presented as headings, text, and a table) is wrapped in the `<figcaption>` element. It is explicitly associated with the image using `role="group"` on the containing `<figure>` element in web browsers that don’t convey the semantics of the `<figure>` element.
 
