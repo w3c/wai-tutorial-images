@@ -167,6 +167,8 @@ Displaying these effects requires browsers that support the following web techno
 {% include box.html type="end" %}
 {:/}
 
+{% include ednote.html note="Remove Outdated Support Notes" issue="3" repo="" status="open" %}
+
 {::nomarkdown}
 {% include box.html type="start" title="Note" class="simple notes" %}
 {:/}
